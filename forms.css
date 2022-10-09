@@ -1,0 +1,80 @@
+body{
+    background-color: rgba(212, 236, 236, 0.788);
+    position:absolute;
+    left: 50%;
+    top: 8%;
+    margin: -100px 0 0 -150px;
+    height: 30px;
+    width: 175%;
+}
+
+em {
+   color: rgb(238, 12, 12) 
+}
+
+fieldset{
+    border: 2px rgb(62, 12, 180) solid;
+    border-radius: 10px;
+    width: 35%;
+    text-align: center;
+}
+
+input[type=text]{
+    width: 85%;
+    padding-left: 1px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none; 
+}
+
+input[type=email],
+textarea{
+    width: 90%;
+    padding-left: 1px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none; 
+}
+
+label{
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: bolder;
+    font-family:Verdana;
+}
+
+textarea{
+    line-height: 15px;
+    padding: 5px;
+    height: 45px;
+    resize: none;
+    font-family: verdana;
+}
+
+input[type=submit]{
+    display: block;
+    background-color: rgb(248, 167, 167);
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+label{
+    width: auto;
+    display: inline-block;
+}
+
+Footer {
+    font-size: 5px;
+    background-color: rgb(112, 95, 160);
+    border-radius: 15px;
+}
