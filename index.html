@@ -10,7 +10,7 @@
     <title>Form Freelancer</title>
 </head>
 
-<center>
+
 <body>
  
     <style class="container center-align" ></style>
@@ -30,17 +30,17 @@
         <br>
 
         <label for="tel">Telefone:<em>*</em></label> <br>
-        <input type="tel" id="telefone" name="Telefone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" placeholder="(DD)9.9999-9999" required>
+        <input type="tel" id="telefone" name="Telefone" placeholder="(DD)99999-9999" required>
         <br>
 
-        <label for="Mensagem">Mensagem:<em>*</em></label>
+        <label for="Mensagem">Mensagem:</label>
         <textarea id="mensagem" name="Mensagem" rows="5" cols="33" placeholder="Informe o que Deseja"></textarea>
         <br>  <!--quando você quer permitir ao usuário informar um texto extenso em formato livre. ROW E COLS É BOM DEFINIR PQ DEFINE O TAMANHO DO QUADRADO DA MENSAGEM, PQ EXISTEM DIFERENTES TIPOS DE NAVEGADORES-->
 
         <label>Qual idioma você prefere?:</label>
         <select class="browser-default ">
             <option value="" disabled selected style="border-radius: 3px;">Selecione um Idioma</option>
-            <option value="alemão">Alemão</option>
+            <option value="frances">Francês</option>
             <option value="portugues">Português</option>
             <option value="ingles">Inglês</option>
             <option value="espanhol">Espanhol</option>
@@ -49,13 +49,13 @@
 
         <label>Quais Linguagens Você Prefere?</label>
         <select class="browser-default ">
-            <option value="" disabled selected style="border-radius: 3px;">Selecione Uma linguagem</option>
+            <option value="" disabled selected style="border-radius: 3px;">Escolha Uma linguagem</option>
             <option value="java">Java</option>
             <option value="python">Python</option>
             <option value="C">C</option>
             <option value="PHP">PHP</option>
         </select>
-        
+
         <label for="arquivo">Protótipo(Requisitos):</label>
         <br>
 
@@ -65,10 +65,10 @@
                 <input type="file" multiple>
             </div>
             <div class="file-path-wrapper">
-                <input class="file-path validate" type="text" placeholder="Nenhum Aquivo Selecionado">
+                <input class="file-path validate" type="text" placeholder="Nenhum Arquivo Selecionado">
             </div>
         </div>
-        <label for="bancodeDados" id="bancodados" name="BancodeDados">Banco de Dados:
+        <label for="bancodeDados" id="bancodados" name="BancodeDados">Banco de Dados: <em>*</em>
         <label>    
             <input name="mysql" type="radio" />
             <span>mySQL |</span>
@@ -82,15 +82,13 @@
             <span>mongoDB |</span>
         </label>
         <label>
-            <input name="n/a" type="radio" />
-            <span>N/a |</span>
-        </label>
-        <label>
             <input name="outro" type="radio" />
             <span>Outro</span>
         </label>
         <br>
-        <label for="TurnoReunioes" id="turnoreunioes" name="Turno Para Reuniao">Turno Para Reuniões:<em>*</em>
+        <br>
+
+        <label for="TurnoReunioes" id="turnoreunioes" name="Turno Para Reuniao">Melhor turno para Reunião:<em>*</em>
             <label>
                 <input type="checkbox" /> <span>Manhã</span>
             </label>
@@ -101,21 +99,26 @@
                 <input type="checkbox" /> <span>Noite</span>
             </label>
             <br>
-            <label for="horario">Horário Sugerido:</label>
-            <input type="time" name="usr_horario">
             <br>
-            <label for="email">Data Prevista Entrega:<em>*</em></label>
+
+            <label for="horario">Horário Sugerido: <em>*</em> </label>
+            <input type="time" name="usr_horario" required>
             <br>
-            <input type="datetime" id="Data" name="dd/mm/aaaa" placeholder="dd/mm/aaaa" required>
+           
+            <label for="email">Data Prevista Entrega:<em>*</em>  </label>
             <br>
+            <input type="date" name="prev_" required>
+            <br>
+
             <input type="submit" value="Enviar">
             <br>
-            <input type="submit" value="Limpar">
-
+            <input type="reset" value="Limpar">
+            
     </fieldset>
 </body>
 <footer> 
+    <center>
     <h6> Desenvolvido por Igor Melo</h6>
-</center>
+    </center>    
 </footer>    
 </html>
