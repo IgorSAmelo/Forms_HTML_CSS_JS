@@ -9,24 +9,27 @@ public class Cliente {
     private String email;
     private String telefone;
     private Date dataNasc;
+    private Endereco endereco;
 
     // constructor vazio
     public Cliente() {
     }
 
     // método constructor cheio ou full
-    public Cliente(String nome, String cpf, String email, String telefone, Date dataNasc) {
+    public Cliente(String nome, String cpf, String email, String telefone, Date dataNasc, Endereco end) {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
         this.telefone = telefone;
         this.dataNasc = dataNasc;
+        this.endereco = end;
     }
     // método get para informar o valor do atributo
+
     public String getNome() {
         return nome;
     }
-// metodo set para modificar o valor do atributo
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -53,6 +56,14 @@ public class Cliente {
 
     public Date getDataNasc() {
         return dataNasc;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 
 }
