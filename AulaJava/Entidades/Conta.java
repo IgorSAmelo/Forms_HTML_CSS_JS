@@ -20,6 +20,39 @@ public class Conta {
         this.status = status;
     }
 
+    public boolean sacar(double valor) {
+        if (this.saldo + this.limite >= valor) {
+            this.saldo -= valor;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean depositar(double valor) {
+        if (valor > 0) {
+            this.saldo += valor;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean transferir(double valor, Conta contaFav) {
+        if (contaFav != null) {
+            if (this.saldo + this.limite >= valor) {
+                this.saldo -= valor;
+                contaFav.saldo += valor;
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+
+    }
+
     public int getNumero() {
         return numero;
     }
@@ -55,4 +88,10 @@ public class Conta {
     public void setStatus(boolean status) {
         this.status = status;
     }
+
+    public String toString() {
+        return"Conta de " + this.cliente.getNome() + " de numero "+ this.numero + " | " + this.cliente.toString();
+    }
+
+
 }
